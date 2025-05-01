@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A RISC-V Multithreaded Core - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>A RISC-V Multithreaded Core</h1>
+        <p>Targeting the Skywater 0.13μm ASIC Library</p>
+    </header>
+    
+    <section id="project-overview">
+        <h2>Project Overview</h2>
+        <p>This project focuses on the simulation and validation of RISC-V instructions for a multithreaded core architecture, targeting the Skywater 0.13μm ASIC library. The project involves using a co-simulation environment combining RTL and Spike simulators to test the functionality of core operations, implement cycle-accurate tracking, and validate pipeline behavior for different instructions. My contributions included setting up the co-simulation environment, validating various instructions, automating test cases, and ensuring correct execution of instructions like ADDI, branch operations, and pipeline tracking.</p>
+    </section>
+
+    <section id="sprint-objectives">
+        <h2>Sprint Objectives</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sprint</th>
+                    <th>Objective</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Establish co-simulation between Spike and RTL to verify instruction execution.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Validate basic instructions (ADDI, JAL, etc.) and enhance testbench for cycle-accurate pipeline tracking.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Expand instruction coverage and resolve discrepancies between Spike and RTL.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Simulate branch instructions using inline assembly and log outputs for debugging.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="user-stories">
+        <h2>User Stories and Key Tasks</h2>
+
+        <h3>Co-Simulation Setup</h3>
+        <p><strong>Task:</strong> Set up Spike/RTL co-simulation to verify the functionality of basic instructions.<br>
+        <strong>Contribution:</strong> Established the framework for comparing the ISA simulation (Spike) with the RTL model.<br>
+        <strong>Commit:</strong> <a href="https://github.com/Rivier-Computer-Science/OctoNyte/issues/9#event-16069658276">Co-Simulation Setup Commit</a></p>
+
+        <h3>Instruction Validation</h3>
+        <p><strong>Task:</strong> Write tests for the ADDI, JAL, BEQ, and other instructions; implement cycle-accurate pipeline tracking.<br>
+        <strong>Contribution:</strong> Created and validated tests for the ADDI instruction and enhanced the testbench to log pipeline stages.<br>
+        <strong>Commits:</strong> <a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/63/commits/3fc801a1ba5ac959278b01fcf812739094dcbed8#diff-987c4537bc64ddd2a9e9b8400d21289cf864b21784c67f11958958fb1ac1b256">ADDI Test Commit</a>, <a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/63/commits/3fc801a1ba5ac959278b01fcf812739094dcbed8#diff-987c4537bc64ddd2a9e9b8400d21289cf864b21784c67f11958958fb1ac1b256">Pipeline Stage Validation Commit</a></p>
+
+        <h3>Instruction Coverage and Discrepancy Resolution</h3>
+        <p><strong>Task:</strong> Expand instruction set coverage and resolve any discrepancies between Spike and RTL simulations.<br>
+        <strong>Contribution:</strong> Verified multiple instructions and worked on resolving differences.<br>
+        <strong>Commit:</strong> <a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/87/commits/ccedbcb4832f8138798d2cace37a3c694ae988fc#diff-ba828249168ec0f1b7e819c8bb24c7f36490e561d67191a9c7b0c38c0fdf443d">Sprint 3 Commit</a></p>
+
+        <h3>Branch Instruction Testing</h3>
+        <p><strong>Task:</strong> Simulate branch instructions using inline RISC-V assembly embedded in C.<br>
+        <strong>Contribution:</strong> Developed tests for conditional branches and logged execution output.<br>
+        <strong>Commit:</strong> <a href="https://github.com/Rivier-Computer-Science/OctoNyte/commit/1f4696666ad7b06da8bb2448b5a22f2a5e7ce731">Branch Testing Commit</a></p>
+    </section>
+
+    <section id="contributions">
+        <h2>Evidence of Contributions</h2>
+        <h3>Key Contributions:</h3>
+        <ul>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/issues/9#event-16069658276">Co-Simulation Setup</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/63/commits/3fc801a1ba5ac959278b01fcf812739094dcbed8#diff-987c4537bc64ddd2a9e9b8400d21289cf864b21784c67f11958958fb1ac1b256">ADDI Register Dump Output</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/63/commits/3fc801a1ba5ac959278b01fcf812739094dcbed8#diff-987c4537bc64ddd2a9e9b8400d21289cf864b21784c67f11958958fb1ac1b256">Python Register Comparator Script</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/63/commits/3fc801a1ba5ac959278b01fcf812739094dcbed8#diff-987c4537bc64ddd2a9e9b8400d21289cf864b21784c67f11958958fb1ac1b256">Simulation Outputs</a></li>
+        </ul>
+    </section>
+
+    <section id="appendix">
+        <h2>Appendix</h2>
+        <ul>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/issues/9#event-16069658276">Sprint 1 Summary</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/63/commits/3fc801a1ba5ac959278b01fcf812739094dcbed8#diff-987c4537bc64ddd2a9e9b8400d21289cf864b21784c67f11958958fb1ac1b256">Sprint 2 Summary</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/pull/87/commits/ccedbcb4832f8138798d2cace37a3c694ae988fc#diff-ba828249168ec0f1b7e819c8bb24c7f36490e561d67191a9c7b0c38c0fdf443d">Sprint 3 Summary</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte/commit/1f4696666ad7b06da8bb2448b5a22f2a5e7ce731">Sprint 4 Summary</a></li>
+            <li><a href="https://github.com/Rivier-Computer-Science/OctoNyte">Public Repository</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>For the complete code repository, visit the <a href="https://github.com/Rivier-Computer-Science/OctoNyte">OctoNyte GitHub repository</a>.</p>
+    </footer>
+</body>
+</html>
